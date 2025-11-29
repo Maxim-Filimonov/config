@@ -1,0 +1,24 @@
+Include ~/.orbstack/ssh/config
+
+# CodeSandbox SSH Integration
+Include "csb/config"
+# End of CodeSandbox SSH Integration
+Host beast.conpago.lan
+  HostName beast.conpago.lan
+  User conpago
+
+Host github.com
+HostName github.com
+UseKeychain yes
+AddKeysToAgent yes
+IdentityFile ~/.ssh/id_rsa
+
+# Exammple of a custom SSH configuration setup 
+#Host github.com
+#HostName github.com
+#UseKeychain yes
+#User git
+#IdentityFile ~/.ssh/id_cpg
+
+Host *
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
