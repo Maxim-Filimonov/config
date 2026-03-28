@@ -1,5 +1,5 @@
-# yadm
-Dotfiles reborn
+# chezmoi
+Dotfiles managed with [chezmoi](https://www.chezmoi.io/)
 
 
 Install homebrew:
@@ -8,13 +8,13 @@ Install homebrew:
 ```
 
 
-Install yadm
+Install chezmoi
 ```
-brew install yadm
+brew install chezmoi
 ```
 
-Close this repo
+Clone this repo
 ```
-yadm clone https://github.com/Maxim-Filimonov/yadm.git
-yadm status
+chezmoi init https://github.com/Maxim-Filimonov/config.git
+chezmoi apply
 ```
